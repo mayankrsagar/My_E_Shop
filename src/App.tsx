@@ -14,7 +14,7 @@ import {
 import { ToastContainer } from 'react-toastify';
 
 import Navbar from './components/Navbar';
-import Skeleton from './loading/skeleton';
+import Skeleton from './loading/Skeleton';
 
 const ProductList = lazy(() => import('./pages/ProductList'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail'));

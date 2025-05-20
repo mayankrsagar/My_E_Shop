@@ -40,3 +40,25 @@
   font-size: 0.9rem;
   color: #888;
 }
+
+@media (max-width: 480px) {
+  .product-card__image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-card {
+    border-radius: 6px;
+  }
+  .product-card__body {
+    padding: 12px;
+  }
+  .product-card__title {
+    font-size: 0.9rem;
+  }
+  .product-card__price,
+  .product-card__rating {
+    font-size: 0.85rem;
+  }
+}

@@ -41,8 +41,54 @@
 .cart-total {
   margin-top: 24px;
   text-align: right;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  font-size:xx-large;
 }
 .center {
   text-align: center;
   margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+ .cart-list .cart-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cart-item__image {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+  }
+  .cart-item__controls {
+    justify-content: center;
+  }
+
+  .cart-total {
+    padding: 0.75rem;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+  }
+
+  .cart-total h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+ .cart-total {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 12px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .cart-page {
+    padding-bottom: 80px; /* space for pinned total */
+  }
 }
